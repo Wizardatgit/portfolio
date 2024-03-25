@@ -1,0 +1,265 @@
+/* default margin, padding, and font family for all elements */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/* Styling for the hero section */
+.hero{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #eff4fd;
+}
+
+/* Styling for the logo within the hero section */
+.hero .logo{
+    width: 25%;
+}
+
+/* Styling for the navigation bar */
+nav{
+    display: flex;
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Styling for the navigation bar list items */
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+/* Styling for the navigation bar links */
+nav ul li a{
+    text-decoration: none;
+    color:#000;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Hover effect for navigation bar links */
+nav ul li a:hover{
+    color: rgb(255, 145, 0);
+}
+
+/* Styling for the first section */
+.dete1{
+    margin-left: 8%;
+    margin-top: 15%;
+}
+
+/* Styling for the heading in the first section */
+.dete1 h1{
+    font-size: 50px;
+    color: #212121;
+    margin-bottom: 20px;
+}
+
+/* Styling for the highlighted span element */
+span{
+    color: orange;
+}
+
+/* Styling for paragraphs in the first section */
+.dete1 p{
+    color: #555;
+    line-height: 22px;
+    font-style: oblique;
+}
+
+/* Styling for the link button in the first section */
+.dete1 a{
+    background: #ffffff;
+    border:#000;
+    padding: 15px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    display: inline-block;
+    margin: 30px 4px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 2px rgb(0,0,0);
+}
+
+/* Styling for the images section */
+.images{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+
+/* Styling for the images and their transition effect */
+.images img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+
+/* Styling for the shape within the images section */
+.images .shape{
+    height: 80%;
+    width: 110%;
+    padding-right: 40px;
+    bottom: 80px;
+}
+
+/* Hover effect for the shape within the images section */
+.images:hover .shape{
+    bottom: 40px;
+}
+
+/* Styling for the footer */
+footer {
+    text-align: center;
+    position: fixed;
+    margin-top: auto;
+    bottom: 0;
+    width: 100%;
+    height: 50px;   
+    background-color: #333;
+    color: #fff;
+    font-size: 0.8rem;
+}
+
+/* Styling for the circular self-portrait in the images section */
+.images .myself{
+    width: 27vw;
+    height: 25vw;
+    margin-right: 40px;
+    margin-bottom: 100px;
+    border-radius: 50%;
+    filter: grayscale(100%);
+    border: px solid white;
+}
+
+/* Hover effect for the circular self-portrait in the images section */
+.images:hover .myself{
+    left: 45%;
+    bottom: 50px;
+}
+
+/* Styling for the Facebook icon */
+.facebook:hover{
+    background-color: #1877F2;
+}
+
+
+#facebook{
+    color:	#1877F2;
+}
+
+
+#facebook:hover {
+    color:	white;
+}
+
+/* Styling for the Instagram icon */
+.instagram:hover{
+    background: -webkit-linear-gradient( #f9ce34,  #ee2a7b, #6228d7 );
+}
+
+
+#instagram{
+    background: -webkit-linear-gradient( #f9ce34,  #ee2a7b, #6228d7 );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+#instagram:hover{
+    background: -webkit-linear-gradient( white, white );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Styling for the LinkedIn icon */
+.linkedin:hover{
+    background-color:#0077b5;
+}
+
+
+#linkedin{
+    color:#0077b5;
+}
+
+
+#linkedin:hover{
+    color:white;
+}
+
+/* Media queries for responsive design */
+/* Adjustments for screens with a maximum width of 1250px */
+@media (max-width: 1250px) {
+    .hero .logo {
+        width: 30%; 
+    }
+
+    .dete1 {
+        margin-left: 5%; 
+        margin-top: 10%; 
+    }
+
+    .images {
+        right: 50px; 
+    }
+
+    .images .myself {
+        width: 20vw; 
+        height: 18vw; 
+        margin-bottom: 50px; 
+    }
+}
+
+/* Adjustments for screens with a maximum width of 1100px */
+@media (max-width: 1100px) {
+    .hero .logo {
+        width: 35%; 
+    }
+
+    .dete1 {
+        margin-left: 3%; 
+    }
+
+    .images {
+        display: none; 
+    }
+}
+
+/* Adjustments for screens with a maximum width of 550px */
+@media (max-width: 550px) {
+    .hero .logo {
+        width: 50%; 
+    }
+
+    .dete1 {
+        margin-left: 5%; 
+        margin-top: 8%;
+    }
+
+    .images .myself {
+        width: 40vw; 
+        height: 36vw; 
+        margin-bottom: 30px; 
+    }
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,189 @@
+/* Common Styles */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body Styles */
+body {
+    background: #333;
+}
+
+/* Hero Section Styles */
+.hero {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: #191919;
+    color: #ffffff;
+}
+
+.hero .logo {
+    width: 25%;
+}
+
+/* Navigation Styles */
+nav {
+    display: flex;
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: red;
+}
+
+/* Container Styles */
+.container {
+    background: url() no-repeat center;
+    background-size: cover;
+    padding: 100px 40px;
+    text-align: center;
+    color: white;
+    height: 43vh;
+}
+
+.container p {
+    max-width: 600px;
+    margin: 40px auto;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+/* Email Box Styles */
+.email-box {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.email-box i {
+    background: #2f3542;
+    width: 40px;
+    line-height: 40px;
+}
+
+/* Input Styles */
+input:invalid {
+    border: 2px solid rgba(202, 37, 62, 0.768);
+}
+
+input:valid {
+    border: 2px solid rgb(62, 251, 62);
+}
+
+.tbox, .btn {
+    border: none;
+    outline: none;
+}
+
+.tbox {
+    width: 0px;
+    transition: 0.6s;
+}
+
+.email-box:hover > .tbox, .tbox:focus {
+    width: 260px;
+    padding: 0 10px;
+}
+
+/* Button Styles */
+.btn {
+    background: #2f3542;
+    color: white;
+    padding: 0 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    position: fixed;
+    margin-top: auto;
+    bottom: 0;
+    width: 100%;
+    height: 50px; /* Height of the footer */
+    background-color: #333;
+    color: #fff;
+    font-size: 0.8rem;
+}
+
+/* Responsive Styles */
+/* Responsive styles for screens up to 1250px */
+@media (max-width: 1250px) {
+    nav ul li {
+        margin: 10px 15px; /* Adjust the margin as needed */
+    }
+}
+
+/* Responsive styles for screens up to 1100px */
+@media (max-width: 1100px) {
+    nav {
+        width: 90%; 
+    }
+
+    .hero .logo {
+        width: 20%; 
+    }
+}
+
+/* Responsive styles for screens up to 550px */
+@media (max-width: 550px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .hero .logo {
+        width: 50%; 
+    }
+
+    .container {
+        padding: 60px 20px; 
+        height: auto;
+    }
+
+    .email-box {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .email-box i {
+        margin-bottom: 10px;
+    }
+
+    .email-box .tbox {
+        width: 100%; 
+        margin-bottom: 10px;
+    }
+}
+
+
+
+

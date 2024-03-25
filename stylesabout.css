@@ -1,0 +1,307 @@
+/* margin, padding, and font family for all elements */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/* Styling for the hero section */
+.hero{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: #191919;
+    color: #ffffff;
+}
+
+/* Styling for the logo within the hero section */
+.hero .logo{
+    width: 25%;
+}
+
+/* Styling for the navigation bar */
+nav{
+    display: flex;
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Styling for the footer */
+footer {
+    text-align: center;
+    position: fixed;
+    margin-top: auto;
+    bottom: 0;
+    width: 100%;
+    height: 50px;   
+    background-color: #333;
+    color: #fff;
+    font-size: 0.8rem;
+}
+
+/* Styling for navigation bar list items */
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+/* Styling for navigation bar links */
+nav ul li a{
+    text-decoration: none;
+    color:#ffffff;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Hover effect for navigation bar links */
+nav ul li a:hover{
+    color: #f9004d;
+}
+
+/* Styling for the About section */
+.about{
+    width: 100%;
+    padding: 78px 0px;
+}
+
+/* Styling for images within the About section */
+.about img {
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+}
+
+/* Styling for text within the About section */
+.abouttext{
+    width: 550px;
+}
+
+/* Styling for h1 with target attribute */
+h1[target]{
+    font-weight: 700;
+}
+
+/* Styling for the mainbox within the About section */
+.mainbox {
+    width: 90%;
+    max-width: 1130px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* Styling for h1 within the About section */
+.abouttext h1{
+    color: white;
+    font-size: 80px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+/* Styling for h5 within the About section */
+.abouttext h5{
+    color: white;
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+
+/* Styling for the span element */
+span{
+    color: #f9004d;
+}
+
+/* Styling for p with target="_top" attribute */
+p[target="_top"]{
+    color: rgb(136, 208, 208);
+}
+
+/* Styling for text within the About section */
+.abouttext p{
+    color: rgba(255, 233, 187, 0.855);
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+
+/* Styling for sections */
+section{
+    margin: 40px 40px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(236, 234, 231, 0.5);
+}
+
+/* Styling for h2 within sections */
+section h2{
+    color: #ffffff;
+    font-size: 36px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+/* Styling for the last child of h4 within the Education section */
+.education h4:last-child{
+    color: rgb(251, 240, 208);
+}
+
+/* Styling for h4 within the Education section, excluding the last child */
+.education h4:not(:last-child){
+    color: #ffd2e1;
+}
+
+/* Styling for hr elements */
+hr{
+    margin-bottom: 15px;
+}
+
+/* Styling for h4 within sections */
+section h4{
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    text-align: justify;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+}
+
+/* Styling for p within sections */
+.section p{
+    font-size: 15px;
+    margin-bottom: 6px;
+    text-align: justify;
+    font-family: 'Nunito', sans-serif;
+}
+
+/* Styling for the Skills section */
+.skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: space-evenly;
+}
+
+/* Styling for list items within the Skills section */
+.skills li {
+    background-color: #000000;
+    width: 150px;
+    color: F6F4EB;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-top: 30px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+/* Alternate styling for even list items within the Skills section */
+.skills li:nth-child(even){
+    color: rgb(255, 239, 249);
+}
+
+/* Styling for the content after the Contact section */
+.contact::after{
+    content: "Thank You.";
+}
+
+/* Media queries for responsive design */
+/* Adjustments for screens with a maximum width of 1250px */
+@media (max-width: 1250px) {
+    nav ul li {
+        margin: 10px 15px; 
+    }
+
+    section {
+        margin: 20px 20px;
+    }
+}
+
+/* Adjustments for screens with a maximum width of 1100px */
+@media (max-width: 1100px) {
+    nav {
+        width: 90%; 
+    }
+
+    .hero .logo {
+        width: 20%; 
+    }
+
+    section {
+        margin: 15px 15px;
+    }
+}
+
+/* Adjustments for screens with a maximum width of 550px */
+@media (max-width: 550px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .hero .logo {
+        width: 50%; 
+    }
+
+    .container {
+        padding: 60px 20px; 
+        height: auto;
+    }
+
+    .email-box {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .email-box i {
+        margin-bottom: 10px;
+    }
+
+    .email-box .tbox {
+        width: 100%; 
+        margin-bottom: 10px;
+    }
+
+}
+
+/* Additional Responsive styles for sections */
+@media (max-width: 1250px) {
+    section {
+        margin: 20px 20px;
+    }
+}
+
+@media (max-width: 1100px) {
+    section {
+        margin: 15px 15px;
+    }
+}
+
+@media (max-width: 550px) {
+    section {
+        margin: 10px 10px;
+    }
+}
+
+
+
+
